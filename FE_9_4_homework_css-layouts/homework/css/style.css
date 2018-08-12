@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+}
+
+body{
+    min-width: 900px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+a{
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: #FFF;
+}
+a:hover{
+    color: #F3F3F3;
+}
+
+.logo{
+	position: absolute;
+    top: 50px;
+    left: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+
+header {
+	position: relative;
+    width: 100%;
+    height: 740px;
+    background: url("../img/apples.jpg") no-repeat;
+    background-position: center;
+    color: #FFF;
+}
+.nav-top {
+    padding: 20px;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.menu  li{
+    list-style-type: none;
+    display: inline;
+    text-align: right;
+    padding: 40px;
+}
+
+.brand{
+    margin-top: 225px;
+    text-align: center;
+}
+
+.brand p:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 55px;
+}
+
+.amp{
+    font-size: 100px;
+}
+
+.brand p:nth-child(2){
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.btn-top{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.btn-top button{
+    margin-top: 50px;
+    text-align: center;
+    background: #000;
+    border: 2px solid white;
+    padding: 18px 80px;
+    color: #FFF;
+}
+
+.btn-top button:hover{
+    background:#000;
+}
+main {
+    width: 100%;
+}
+.part1 {
+    width: 100%;
+    text-align: center;
+}
+.first{
+    display: inline-block;
+    padding: 120px 10px;
+    width: 42%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 40px;
+} 
+.second {
+    display: inline-block;
+    padding: 120px 10px;
+    width: 42%;
+    text-align: left;
+}
+.first h6 {
+    font-weight: 100;
+    font-size: 25px;
+}
+.first b {
+    font-size: 25px;
+}
+.second p {
+    font-size: 13px;
+}
+.part2 {
+    padding: 150px 10px 0 10px;
+    width: 100%;
+    background: #f3f3f3;
+}
+.part2-img {
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.shadow {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #000;
+}
+.part2-img img {
+    width: 100%;
+    color: #FFF;
+}
+.part2-img h6 {
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    color: #FFF;
+}
+.part2-img a {
+    z-index: 1;
+    position: absolute;
+    padding: 8px 10px;
+    top: 30px;
+    right: 40px;
+    color: #FFF;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    border: 3px solid #FFF;
+}
+.part2-img a:hover {
+     background: rgba(0,0,0,1);
+}
+.part2-text {
+    width: 40%;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.part2-text p {
+    font-size: 15px;
+}
+.part2 h1:first-child {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.part2 article {
+    display: table;
+    text-align: center;
+}
+.part2 article:last-child {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+form {
+    padding: 40px 0;
+    width: 100%;
+    background: #FFF;
+}
+form h5 {
+    font-size: 20px;
+    font-weight: 100;
+}
+form h5 b {
+    font-size: 25px;
+    font-weight: 900;
+}
+.form-2{
+    text-align: right;
+    display: inline-block;
+    width: 34%;
+}
+.form-1{
+    display: inline-block;
+    width: 65%;
+}
+form input[type="email"] {
+    padding: 15px;
+    width: 70%;
+    background: #f3f3f3;
+    border: 1px solid #343638;
+}
+form input[type="button"] {
+    color: #FFF;
+    cursor: pointer;
+    margin-left: -5px;
+    padding: 15px;
+    background: #343638;
+    border: 1px solid #343640;
+    transition-duration: 0.5s;
+}
+form input[type="button"]:hover {
+    background: #000;
+}
+
+footer {
+    position: relative;
+    background: #fff;
+    color: #000;
+    padding: 30px 30px;
+    font-size: 14px;
+}
+footer article h4 {
+    color: #000;
+}
+footer article {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    padding: 50px 10px;
+    color: #A4A4A4;
+}
+.f3{
+    color: #F3F3F3;
+}
+.newsletter input[type="email"] {
+    padding: 7px;
+    font-size: 12px;
+    width: 52%;
+    background: #f3f3f3;
+    border: 1px solid #343638;
+}
+.newsletter input[type="button"] {
+    color: #F0F0F0;
+    cursor: pointer;
+    margin-left: -5px;
+    padding: 7px;
+    background: #343640;
+    font-size: 12px;
+    border: 1px solid #343638;
+    transition-duration: 0.5s;
+}
+.newsletter input[type="button"]:hover {
+    background: #000;
+}
+.footer {
+    position: relative;
+}
+
+.footer-line {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.nav-bot a {
+    padding: 10px;
+    color: #000;
+}
+.copy {
+    color: #A4A4A4;
+    display: inline-block;
+    width: 30%;
+}
+.links {
+    display: inline-block;
+    width: 69%;
+    text-align: right;
+}
+.links ul li {
+    list-style-type: none;
+    display: inline;
+    text-align: right;
+}
