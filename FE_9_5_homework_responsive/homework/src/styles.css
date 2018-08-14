@@ -1,0 +1,212 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #0a1223;
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.title_wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.content {
+  width: 75vw;
+  margin: 0 auto;
+}
+.menu-top{
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+
+li {
+  padding-left: 40px;
+}
+
+ul .link{
+  color: #5d5d5d;
+  text-decoration: none;
+}
+
+ul .active {
+  color: #54597d;
+  border: none;
+}
+ul .link:active {
+  color: #54597d;
+  border: none;
+}
+ul .link:hover {
+  color: #54597d;
+}
+.facts .title {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  font-size: 5vw;
+  color: #ddd;
+  text-align: center;
+}
+
+.facts .title {
+  font-style: italic;
+}
+
+.facts .moonfacts {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.facts .moonfacts:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.facts .moonfacts .info {
+  width: 49%;  
+}
+
+.facts .moonfacts h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  background: linear-gradient(to right, #ddd, #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+.facts .moonfacts p {
+  text-indent: 20px;
+  text-align: justify;
+  color: #5d5d5d;
+}
+
+.facts .moonfacts img {
+  width: 49%;
+}
+
+.scroll {
+  display: none;
+}
+
+@media (max-width: 991px) { 
+ul {
+    justify-content: center;
+  }
+  
+  .facts_section .moonfacts,
+  .facts_section .moonfacts:nth-child(even)  {
+    flex-direction: column; 
+    justify-content: center;    
+  }
+  
+  .facts .moonfacts .info, 
+  .facts .fmoonfactsact img {
+    width: 100%;
+  }
+  
+  .facts .moonfacts .info {
+    margin-bottom: 50px;
+  }
+  
+  .facts .title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 575px) { 
+  body {
+    background-color: #fff;
+  }
+  
+  .content {
+    width: 80vw;
+  }
+  
+  .top-menu {
+    margin: 0;
+  }
+  
+  ul{
+    flex-direction: column; 
+  }
+  
+  li {
+    padding: 7px 0 7px 7px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul .active, 
+  ul .link:active {
+    font-weight: bold;
+  }
+  
+  .facts .title {
+    color: #000;
+    margin: 100px 0 150px 0;
+  }
+  
+  .facts .moonfacts h2 {
+    color: #484747;
+    background: unset;   
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+  }
+  
+  .facts .moonfacts p {
+    font-size: 1.1em;
+    color: #5d5d5d;
+  }
+  
+  .scroll{
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #5ebcff;
+    color: #fff;
+    bottom: 25px;
+    right: 25px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;  
+    box-shadow: 10px 10px 10px #e0e0e0;
+  }
+}
